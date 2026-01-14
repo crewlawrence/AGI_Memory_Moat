@@ -1,0 +1,6 @@
+Flask==3.1.2
+langchain==0.3.27
+openai==2.15.0
+chromadb==1.4.0
+pydantic==2.12.5
+python-dotenv==1.2.1
