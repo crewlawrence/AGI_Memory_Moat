@@ -1,1 +1,31 @@
+# Virtualenv
+.venv/
 
+# Python cache
+__pycache__/
+*.pyc
+
+# dotenv
+.env
+.env.*
+
+# Editor/IDE
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Optional: Ignore local data directories
+data/
