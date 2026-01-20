@@ -6,7 +6,6 @@ from pathlib import Path
 # Page configuration
 st.set_page_config(
     page_title="AGI Memory System",
-    page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -101,13 +100,13 @@ with st.sidebar:
     
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("📂 Load", use_container_width=True):
+        if st.button(" Load", use_container_width=True):
             st.session_state.memory_file = memory_file
             st.session_state.memories = load_memories(memory_file)
             st.success(f"Loaded {len(st.session_state.memories)} memories")
     
     with col2:
-        if st.button("💾 Save", use_container_width=True):
+        if st.button(" Save", use_container_width=True):
             if save_memories(st.session_state.memories, memory_file):
                 st.success("Memories saved!")
     
@@ -150,7 +149,7 @@ with st.sidebar:
     )
 
 # Main content
-st.markdown('<div class="main-header">🧠 AGI Memory System</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"> AGI Memory System</div>', unsafe_allow_html=True)
 
 # Tabs
 tab1, tab2, tab3 = st.tabs(["📝 Add Memory", "🔍 Search & View", "⚙️ Management"])
